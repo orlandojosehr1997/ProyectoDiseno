@@ -11,12 +11,18 @@ package Domain;
  */
 public class PromocionBuilder 
 {
+    private Promocion promocion;
+    
     public void addProducto(Producto p)
     {
-        
+        promocion.addProducto(p);
     }
     public void setPrecio(float precio)
     {
-        
+        promocion.setPrecio(precio);
+    }
+    public Promocion getPromocionFinal()
+    {
+        return promocion;
     }
 }
