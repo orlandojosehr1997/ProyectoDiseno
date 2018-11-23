@@ -13,7 +13,7 @@ import java.util.ArrayList;
  */
 public class Pedido {
     private String fecha;
-    private ArrayList<Producto> productos;
+    private ArrayList<Item> items;
     private float monto;
     private Cliente cliente;
     private Evaluacion evaluacion;
@@ -30,21 +30,20 @@ public class Pedido {
     }
 
     //Producto
-    public void agregarProducto(Producto p)
+    public void agregarItem(Item i)
     {
-        productos.add(p);
+        items.add(i);
     }
     
-    public void eliminarProducto(Producto p)
+    public void eliminarProducto(Item i)
     {
-        productos.remove(p);
+        items.remove(i);
     }
    
     //Constructor
-    
-    public Pedido(String fecha, ArrayList<Producto> productos, float monto, Cliente cliente, Evaluacion evaluacion, Pago pago, TipoServicio tipoServicio) {
+    public Pedido(String fecha, ArrayList<Item> items, float monto, Cliente cliente, Evaluacion evaluacion, Pago pago, TipoServicio tipoServicio) {
         this.fecha = fecha;
-        this.productos = productos;
+        this.items = items;
         this.monto = monto;
         this.cliente = cliente;
         this.evaluacion = evaluacion;
@@ -61,12 +60,12 @@ public class Pedido {
         this.fecha = fecha;
     }
 
-    public ArrayList<Producto> getProductos() {
-        return productos;
+    public ArrayList<Item> getItems() {
+        return items;
     }
 
-    public void setProductos(ArrayList<Producto> productos) {
-        this.productos = productos;
+    public void setItems(ArrayList<Item> items) {
+        this.items = items;
     }
 
     public float getMonto() {

@@ -9,8 +9,10 @@ package Domain;
  *
  * @author orlandojose
  */
-public class TipoPago {
-    private String nombre;
+public interface TipoPago {
+    public void pagar();
+    
+    /*private String nombre;
     private String descripcion;
 
     //Constructor
@@ -35,6 +37,6 @@ public class TipoPago {
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
-    
+    */
     
 }

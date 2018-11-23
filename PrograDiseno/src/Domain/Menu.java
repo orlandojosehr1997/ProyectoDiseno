@@ -14,7 +14,7 @@ import java.util.ArrayList;
 public class Menu {
     private static Menu menu = null;
     private ArrayList<Promocion> promociones;
-    private ArrayList<Producto> productos;
+    private ArrayList<Item> items;
     
     //Constructor
     private Menu() {
@@ -38,12 +38,12 @@ public class Menu {
         this.promociones = promociones;
     }
 
-    public ArrayList<Producto> getProductos() {
-        return productos;
+    public ArrayList<Item> getItems() {
+        return items;
     }
 
-    public void setProductos(ArrayList<Producto> productos) {
-        this.productos = productos;
+    public void setProductos(ArrayList<Item> items) {
+        this.items = items;
     }
 
    

@@ -12,8 +12,9 @@ import java.util.ArrayList;
  * @author orlandojose
  */
 public class CadenaRestaurante {
-    private ArrayList<Empleado> empleados;
-    private ArrayList<Cliente> clientes;
+    private ArrayList<Empleado> empleados = new ArrayList();
+    private ArrayList<Cliente> clientes = new ArrayList();
+    private ArrayList<Sucursal> sucursales = new ArrayList();
     private GerenteGeneral gerenteGeneral;
     
     //Constructor
@@ -40,4 +41,37 @@ public class CadenaRestaurante {
             return false;
         }
     }
+
+    public ArrayList<Empleado> getEmpleados() {
+        return empleados;
+    }
+
+    public void setEmpleados(ArrayList<Empleado> empleados) {
+        this.empleados = empleados;
+    }
+
+    public ArrayList<Cliente> getClientes() {
+        return clientes;
+    }
+
+    public void setClientes(ArrayList<Cliente> clientes) {
+        this.clientes = clientes;
+    }
+
+    public ArrayList<Sucursal> getSucursales() {
+        return sucursales;
+    }
+
+    public void setSucursales(ArrayList<Sucursal> sucursales) {
+        this.sucursales = sucursales;
+    }
+
+    public GerenteGeneral getGerenteGeneral() {
+        return gerenteGeneral;
+    }
+
+    public void setGerenteGeneral(GerenteGeneral gerenteGeneral) {
+        this.gerenteGeneral = gerenteGeneral;
+    }
+    
 }
