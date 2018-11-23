@@ -14,8 +14,17 @@ public class Pago {
     private Cliente cliente;
     private float monto;
     private Pedido pedido;
+    private TipoPago tipoPago;
     
     //Constructor
+
+    public Pago(String fecha, Cliente cliente, float monto, Pedido pedido, TipoPago tipoPago) {
+        this.fecha = fecha;
+        this.cliente = cliente;
+        this.monto = monto;
+        this.pedido = pedido;
+        this.tipoPago = tipoPago;
+    }
 
     public Pago(String fecha, Cliente cliente, float monto, Pedido pedido) {
         this.fecha = fecha;
@@ -57,4 +66,13 @@ public class Pago {
     public void setPedido(Pedido pedido) {
         this.pedido = pedido;
     }
+
+    public TipoPago getTipoPago() {
+        return tipoPago;
+    }
+
+    public void setTipoPago(TipoPago tipoPago) {
+        this.tipoPago = tipoPago;
+    }
+    
 }

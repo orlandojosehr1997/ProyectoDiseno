@@ -11,18 +11,32 @@ package Domain;
  */
 public class Transferencia implements TipoPago{
 
-    private final String nombre = "Transferencia";
-    private final String descripcion = "Este pago se realiza por medio de una transferencia.";
+    private String nombre;
+    private String descripcion;
 
     public Transferencia() {
+        nombre = "Transferencia";
+        descripcion = "Este pago se realiza por medio de una transferencia.";
     }
 
+    @Override
     public String getNombre() {
         return nombre;
     }
 
+    @Override
     public String getDescripcion() {
         return descripcion;
+    }
+
+    @Override
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    @Override
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
     }
 
     @Override

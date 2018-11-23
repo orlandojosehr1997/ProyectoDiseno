@@ -11,18 +11,32 @@ package Domain;
  */
 public class Cheque implements TipoPago{
 
-    private final String nombre = "Cheque";
-    private final String descripcion = "Este pago se realiza por un medio de un cheque.";
+    private String nombre;
+    private String descripcion;
 
     public Cheque() {
+        nombre = "Cheque";
+        descripcion = "Este pago se realiza por un medio de un cheque.";
     }
 
+    @Override
     public String getNombre() {
         return nombre;
     }
 
+    @Override
     public String getDescripcion() {
         return descripcion;
+    }
+
+    @Override
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    @Override
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
     }
 
     @Override

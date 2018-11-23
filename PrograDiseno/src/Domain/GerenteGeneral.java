@@ -18,4 +18,10 @@ public class GerenteGeneral extends Empleado{
     public void modificarMenu(){
         
     }
+    public void modificarPrecio(){
+        
+    }
+    public void crearPromocion(){
+        
+    }
 }

@@ -11,18 +11,32 @@ package Domain;
  */
 public class Efectivo implements TipoPago{
 
-    private final String nombre = "Efectivo";
-    private final String descripcion = "Este pago se realiza en efectivo.";
+    private String nombre;
+    private String descripcion;
 
     public Efectivo() {
+        nombre = "Efectivo";
+        descripcion = "Este pago se realiza en efectivo.";
     }
 
+    @Override
     public String getNombre() {
         return nombre;
     }
 
+    @Override
     public String getDescripcion() {
         return descripcion;
+    }
+
+    @Override
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    @Override
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
     }
 
     @Override

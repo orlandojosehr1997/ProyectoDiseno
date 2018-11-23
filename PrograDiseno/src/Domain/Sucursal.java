@@ -15,6 +15,8 @@ public class Sucursal {
     
     private String ubicacion;
     private ArrayList<Integer> telefonos;
+    private ArrayList<Empleado> empleados;
+    private GerenteSucursal gerenteSucursal;
 
     public void agregarTelefono(int telefono)
     {
@@ -22,8 +24,17 @@ public class Sucursal {
     }
 
     //Constructor
+    
+    public Sucursal(String ubicacion, ArrayList<Integer> telefonos, ArrayList<Empleado> empleados, GerenteSucursal gerenteSucursal) {
+        this.ubicacion = ubicacion;
+        this.telefonos = telefonos;
+        this.empleados = empleados;
+        this.gerenteSucursal = gerenteSucursal;
+    }
+
     public Sucursal(String ubicacion) {
         this.telefonos = new ArrayList();
+        this.empleados = new ArrayList();
         this.ubicacion = ubicacion;
     }
     
